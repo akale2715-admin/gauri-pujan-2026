@@ -1,41 +1,173 @@
 <!doctype html>
 <html lang="mr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#120a0b">
+<meta name="description" content="ज्येष्ठ गौरीपूजन — औगड परिवार, अमरावती">
 <title>ज्येष्ठ गौरीपूजन | औगड परिवार</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap');
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#180810;color:#fff7ed;font-family:'Noto Serif Devanagari',serif}
-section{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 18px;position:relative;overflow:hidden}
-.hero{background:radial-gradient(circle at 50% 35%,#9d4966,#4d1833 45%,#16070e);}.hero:after{content:'🌸  🌼  🌸  🌺  🌸';position:absolute;top:8%;left:0;width:100%;font-size:25px;letter-spacing:20px;opacity:.55;animation:float 7s infinite alternate}
-@keyframes float{to{transform:translateY(35px)}} .hero>div{position:relative;z-index:2}.orn{color:#f6c96c;letter-spacing:8px}.kicker{color:#ffe3a3;font-size:17px}.hero h1{font-size:clamp(48px,13vw,86px);line-height:1.03;color:#ffe2a0;text-shadow:0 5px 35px #0009;margin:18px 0}.sub{font-size:22px}.family{font-size:30px;color:#f6c96c;margin:24px 0 34px}
-.btn{display:inline-block;padding:14px 25px;border-radius:40px;text-decoration:none;font-weight:700;margin:6px}.gold{background:#f3c467;color:#40152b}.dark{border:1px solid #f3c467;color:#ffe2a0}
-.light{background:linear-gradient(#fff7e9,#f6dec2);color:#541b35}.inner{width:min(850px,100%)}h2{font-size:clamp(34px,8vw,55px);margin:8px;color:#7b2047}.verse{font-size:19px;line-height:1.9;margin:25px auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}.box{background:#fffaf1;border:1px solid #d6a14e66;border-radius:18px;padding:18px;box-shadow:0 12px 30px #5b18351c}.label{color:#8b5b25;font-size:15px}.value{font-size:20px;font-weight:700;margin-top:5px}
-.invite{background:radial-gradient(circle at 50% 20%,#6d2748,#240c18)}.cardmock{background:#fff7eb;color:#57203a;border:3px solid #d6a14e;border-radius:22px;padding:28px;max-width:650px;margin:25px auto;box-shadow:0 20px 60px #0008}.cardmock h3{font-size:38px;color:#d52d67;margin:5px}.cardmock p{font-size:18px;line-height:1.8}.footer{background:#10060b}.footer h2{color:#f6c96c}
-@media(max-width:650px){.grid{grid-template-columns:1fr}.hero{padding-top:60px}.cardmock{padding:20px}}
-</style></head>
+:root{
+  --ink:#fff8e9; --muted:#ead9bd; --gold:#d8ad59; --gold2:#f6d98c;
+  --deep:#120a0b; --wine:#2a0e12; --wine2:#4a171c; --line:rgba(232,190,102,.35);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--deep);color:var(--ink);font-family:"Noto Serif Devanagari",serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.page{position:relative}
+.page:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:radial-gradient(#fff 0.6px,transparent .6px);background-size:8px 8px;z-index:20;mix-blend-mode:soft-light}
+.hero{min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;overflow:hidden;background:#120a0b}
+.hero-photo{position:absolute;inset:0;background-image:linear-gradient(180deg,rgba(13,5,6,.25),rgba(13,5,6,.62) 58%,#120a0b 100%),url("images/gauri-1.jpg");background-size:cover;background-position:center 38%;filter:saturate(1.05)}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,transparent 0 18%,rgba(10,4,5,.22) 52%,rgba(10,4,5,.76) 100%)}
+.arch{position:absolute;z-index:2;inset:22px 12px 22px;border:1px solid rgba(240,202,119,.48);border-radius:52% 52% 0 0/34% 34% 0 0;box-shadow:inset 0 0 60px rgba(218,171,78,.12),0 0 25px rgba(0,0,0,.35)}
+.arch:before,.arch:after{content:"";position:absolute;top:0;bottom:0;width:18px;border:1px solid rgba(240,202,119,.2)}
+.arch:before{left:10px}.arch:after{right:10px}
+.hero-content{position:relative;z-index:4;padding:70px 22px 50px;max-width:780px}
+.mantra{font-size:14px;letter-spacing:3px;color:var(--gold2);margin-bottom:25px}
+.kicker{font-size:15px;color:#f0d9a8;letter-spacing:2px}
+h1{font-size:clamp(44px,12vw,92px);line-height:1.12;margin:12px 0;color:#fff7e5;text-shadow:0 3px 30px rgba(0,0,0,.65)}
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);font-size:20px;margin:18px 0}
+.orn span{height:1px;width:75px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.host{font-size:22px;color:#f6d58b;font-weight:600}
+.datepill{display:inline-block;margin:22px auto;padding:10px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(20,7,8,.45);backdrop-filter:blur(8px);font-size:15px}
+.open{display:inline-flex;align-items:center;gap:9px;margin-top:15px;padding:15px 28px;border-radius:999px;border:1px solid rgba(255,223,143,.65);background:linear-gradient(135deg,#9b6824,#e7bb64);color:#1c0d0b;font-weight:800;box-shadow:0 10px 35px rgba(219,169,73,.25);transition:.25s}
+.open:active{transform:scale(.98)}
+.scroll{position:absolute;bottom:18px;z-index:5;font-size:12px;color:#d8c09a;letter-spacing:1px;animation:bob 2s infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+.section{padding:74px 18px;position:relative}
+.container{max-width:900px;margin:auto}
+.section-title{text-align:center;font-size:31px;margin:0 0 10px;color:#f6d98c}
+.section-sub{text-align:center;color:var(--muted);font-size:14px;margin:0 auto 30px}
+.goldline{width:95px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto 30px}
+.invite-card{position:relative;padding:36px 22px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(150deg,rgba(89,31,35,.7),rgba(28,10,12,.9));box-shadow:0 25px 70px rgba(0,0,0,.35);overflow:hidden}
+.invite-card:before{content:"";position:absolute;inset:10px;border:1px solid rgba(235,192,98,.18);border-radius:21px;pointer-events:none}
+.poem{font-size:18px;line-height:2;text-align:center;color:#fff0d2;margin:0 auto 24px;max-width:690px}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+.info{padding:18px 12px;text-align:center;border:1px solid rgba(232,190,102,.2);background:rgba(255,255,255,.035);border-radius:18px}
+.icon{font-size:25px}.label{font-size:12px;color:#cdb78f;margin:5px}.value{font-size:16px;color:#fff0d2;font-weight:600}
+.address{margin-top:12px;padding:18px;text-align:center;border-radius:18px;background:rgba(0,0,0,.18);border:1px solid rgba(232,190,102,.18);color:#f0dfc0;line-height:1.8}
+.actions{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin-top:22px}
+.btn{padding:12px 18px;border:1px solid rgba(232,190,102,.4);border-radius:999px;background:#321116;color:#ffe7ad;font-weight:700}
+.btn.primary{background:linear-gradient(135deg,#8b5b20,#d7a94e);color:#1b0b0b}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.photo{border-radius:20px;overflow:hidden;border:1px solid rgba(232,190,102,.2);background:#211012;aspect-ratio:4/5}
+.photo:first-child{grid-column:span 2;aspect-ratio:16/10}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.photo:hover img{transform:scale(1.04)}
+.schedule{display:grid;gap:10px;max-width:620px;margin:auto}
+.row{display:flex;justify-content:space-between;gap:15px;padding:16px 18px;border-bottom:1px solid rgba(232,190,102,.15);background:rgba(255,255,255,.025);border-radius:14px}
+.row b{color:#f7d990}.row span{color:#ead9bd;text-align:right}
+.mapbox{border:1px solid var(--line);border-radius:25px;padding:24px;text-align:center;background:linear-gradient(160deg,#3a1318,#17090b)}
+.map-icon{font-size:42px}
+.footer{text-align:center;padding:70px 20px 45px;background:linear-gradient(#120a0b,#080506)}
+.footer .big{font-size:28px;color:#f4d487;font-weight:700}
+.footer p{color:#bba886;font-size:13px}
+.petals{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:3}
+.petal{position:absolute;top:-30px;font-size:17px;opacity:.65;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(80px,110vh,0) rotate(420deg)}}
+@media(max-width:520px){.info-grid{grid-template-columns:1fr 1fr}.poem{font-size:16px}.section{padding:60px 14px}.hero-content{padding-top:80px}.arch{inset:14px 8px 14px}}
+@media(min-width:760px){.gallery{grid-template-columns:repeat(3,1fr)}.photo:first-child{grid-column:span 2;grid-row:span 2}.section{padding:100px 24px}}
+</style>
+</head>
 <body>
-<section class="hero"><div>
-<div class="orn">✦ ❖ ✦</div><div class="kicker">॥ श्री गणेशाय नमः ॥</div>
-<h1>ज्येष्ठ<br>गौरीपूजन</h1><div class="sub">स्नेहपूर्वक आमंत्रण</div><div class="family">औगड परिवार</div>
-<a class="btn gold" href="#invitation">🙏 आमंत्रण उघडा</a>
-</div></section>
+<div class="page">
+<section class="hero" id="top">
+  <div class="hero-photo"></div><div class="arch"></div>
+  <div class="petals" aria-hidden="true">
+    <span class="petal" style="left:8%;animation-duration:11s;animation-delay:-3s">🌸</span>
+    <span class="petal" style="left:24%;animation-duration:14s;animation-delay:-8s">🌺</span>
+    <span class="petal" style="left:57%;animation-duration:12s;animation-delay:-5s">🌸</span>
+    <span class="petal" style="left:82%;animation-duration:15s;animation-delay:-10s">🌺</span>
+  </div>
+  <div class="hero-content">
+    <div class="mantra">॥ श्री गणेशाय नमः ॥</div>
+    <div class="kicker">स्नेहपूर्वक आमंत्रण</div>
+    <h1>ज्येष्ठ<br>गौरीपूजन</h1>
+    <div class="orn"><span></span> ❈ <span></span></div>
+    <div class="host">औगड परिवार</div>
+    <div class="datepill">१८ सप्टेंबर २०२६ • शुक्रवार • सायंकाळी ७ वाजता</div>
+    <br>
+    <a class="open" href="#invitation">🙏 आमंत्रण उघडा</a>
+  </div>
+  <div class="scroll">खाली स्क्रोल करा ↓</div>
+</section>
 
-<section class="light"><div class="inner">
-<div class="orn">❀ ❀ ❀</div><h2>गौरीच्या आगमनाचा सोहळा</h2>
-<div class="verse">आई गौरीआई गणाची, आली माझ्या गं अंगणी ।<br>संगे शिव चंद्रमौळी, करू पूजेची तयारी ।<br>झिम्मा फुगडीच्या संग, रात्र उत्साही जागेल ।<br>आगमनाचा सोहळा, माझ्या अंगणी रंगेल ॥</div>
-<div class="grid">
-<div class="box"><div class="label">दिनांक</div><div class="value">१८ सप्टेंबर २०२६<br>शुक्रवार</div></div>
-<div class="box"><div class="label">वेळ</div><div class="value">सायंकाळी<br>७ वाजता</div></div>
-<div class="box"><div class="label">स्थळ</div><div class="value">अमरावती<br>महाराष्ट्र – ४४४६०२</div></div>
+<section class="section" id="invitation">
+<div class="container">
+  <h2 class="section-title">॥ ज्येष्ठ गौरीपूजन आमंत्रण ॥</h2>
+  <div class="goldline"></div>
+  <div class="invite-card">
+    <p class="poem">आई गौरीआई गणाची, आली माझ्या गं अंगणी ।<br>
+    संगे शिव चंद्रमौळी, करू पूजेची तयारी ।<br>
+    झिम्मा फुगडीच्या संग, रात्र उत्साही जागेल ।<br>
+    आगमनाचा सोहळा, माझ्या अंगणी रंगेल ॥</p>
+    <p style="text-align:center;color:#d9c4a0;line-height:1.9">आमच्या येथे दरवर्षीप्रमाणे यंदाही गौरीचे आगमन होणार आहे.<br>
+    तरी आपण सर्वांनी सहकुटुंब सहपरिवार येऊन प्रसादाचा लाभ घ्यावा!</p>
+    <div class="info-grid">
+      <div class="info"><div class="icon">📅</div><div class="label">दिनांक</div><div class="value">१८ सप्टेंबर २०२६</div></div>
+      <div class="info"><div class="icon">🪔</div><div class="label">वेळ</div><div class="value">सायंकाळी ७ वाजता</div></div>
+    </div>
+    <div class="address"><b style="color:#f4d487">📍 पत्ता</b><br>८, ए रामकृष्ण कॉलनी, डेंटल कॉलेज जवळ,<br>एस.आर.पी.एफ., एस.आर.पी.एफ. कॅम्प रोड,<br>अमरावती, महाराष्ट्र – ४४४६०२</div>
+    <div class="actions">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://maps.app.goo.gl/aUgVypK1EthdAKn19">📍 Google Maps</a>
+      <a class="btn" href="https://wa.me/?text=ज्येष्ठ%20गौरीपूजन%20आमंत्रण%20-%20औगड%20परिवार%2C%201८%20सप्टेंबर%202०२६%20सायंकाळी%207%20वाजता%2C%20अमरावती">💬 WhatsApp वर शेअर करा</a>
+    </div>
+  </div>
 </div>
-<a class="btn gold" target="_blank" href="https://maps.app.goo.gl/aUgVypK1EthdAKn19">📍 ठिकाण पहा</a>
-</div></section>
+</section>
 
-<section class="invite" id="invitation"><div class="inner">
-<div class="orn">🪔 ❖ 🪔</div><h2 style="color:#f6c96c">आपले सस्नेह आमंत्रण</h2>
-<div class="cardmock"><h3>ज्येष्ठ गौरीपूजन</h3><p>आमच्या येथे दरवर्षीप्रमाणे यंदाही गौरीचे आगमन होणार आहे.</p><p>तरी आपण सर्वांनी सहकुटुंब सहपरिवार येऊन प्रसादाचा लाभ घ्यावा!</p><p><b>१८ सप्टेंबर २०२६, शुक्रवार<br>सायंकाळी ७ वाजता</b></p><p>८, ए रामकृष्ण कॉलनी, डेंटल कॉलेज जवळ,<br>एस.आर.पी.एफ., एस.आर.पी.एफ. कॅम्प रोड,<br>अमरावती, महाराष्ट्र – ४४४६०२</p><h3>औगड परिवार</h3></div>
-</div></section>
+<section class="section" id="darshan">
+<div class="container">
+  <h2 class="section-title">गौरी दर्शन</h2><div class="goldline"></div>
+  <p class="section-sub">आपल्या घरच्या गौरीमातेचे मनोहारी दर्शन</p>
+  <div class="gallery">
+    <a class="photo" href="images/gauri-1.jpg"><img loading="eager" src="images/gauri-1.jpg" alt="ज्येष्ठ गौरीपूजन सजावट"></a>
+    <a class="photo" href="images/gauri-3.jpg"><img loading="lazy" src="images/gauri-3.jpg" alt="गौरीमातेचे दर्शन"></a>
+    <a class="photo" href="images/gauri-4.jpg"><img loading="lazy" src="images/gauri-4.jpg" alt="गौरी सजावट"></a>
+    <a class="photo" href="images/gauri-5.jpg"><img loading="lazy" src="images/gauri-5.jpg" alt="गौरीपूजन"></a>
+    <a class="photo" href="images/gauri-6.jpg"><img loading="lazy" src="images/gauri-6.jpg" alt="गौरीमातेचे छायाचित्र"></a>
+    <a class="photo" href="images/gauri-2.jpg"><img loading="lazy" src="images/gauri-2.jpg" alt="पूजेची सजावट"></a>
+    <a class="photo" href="images/gauri-7.jpg"><img loading="lazy" src="images/gauri-7.jpg" alt="गौरी दर्शन"></a>
+    <a class="photo" href="images/gauri-8.jpg"><img loading="lazy" src="images/gauri-8.jpg" alt="पूजा मांडणी"></a>
+    <a class="photo" href="images/gauri-9.jpg"><img loading="lazy" src="images/gauri-9.jpg" alt="गौरी सजावट"></a>
+    <a class="photo" href="images/gauri-10.jpg"><img loading="lazy" src="images/gauri-10.jpg" alt="ज्येष्ठ गौरीपूजन"></a>
+  </div>
+</div>
+</section>
 
-<section class="footer"><div class="inner"><div class="orn">✦ ❖ ✦</div><p>आपली उपस्थिती हीच आमच्यासाठी आनंदाची बाब आहे.</p><h2>औगड परिवार</h2><a class="btn gold" target="_blank" href="https://wa.me/?text=ज्येष्ठ%20गौरीपूजन%20आमंत्रण%20-%20औगड%20परिवार">💚 WhatsApp वर शेअर करा</a></div></section>
-</body></html>
+<section class="section" id="puja">
+<div class="container">
+  <h2 class="section-title">पूजा सोहळा</h2><div class="goldline"></div>
+  <p class="section-sub">शुभ दिवसाची आठवण ठेवण्यासाठी</p>
+  <div class="schedule">
+    <div class="row"><b>🌺 गौरी आगमन व पूजन</b><span>सायंकाळी ७ वाजता</span></div>
+    <div class="row"><b>🪔 आरती</b><span>पूजेनंतर</span></div>
+    <div class="row"><b>🍚 प्रसाद</b><span>आरतीनंतर</span></div>
+  </div>
+  <p style="text-align:center;color:#9f8b6e;font-size:12px;margin-top:18px">* वेळ उपलब्ध माहितीनुसार दिली आहे.</p>
+</div>
+</section>
+
+<section class="section" id="location">
+<div class="container">
+  <h2 class="section-title">आपली वाट पाहत आहोत</h2><div class="goldline"></div>
+  <div class="mapbox">
+    <div class="map-icon">📍</div>
+    <h3 style="margin:10px 0;color:#f4d487">औगड परिवार</h3>
+    <p style="color:#dcc8a6;line-height:1.8">रामकृष्ण कॉलनी, डेंटल कॉलेज जवळ<br>अमरावती, महाराष्ट्र – ४४४६०२</p>
+    <a class="open" style="margin-top:8px" target="_blank" rel="noopener" href="https://maps.app.goo.gl/aUgVypK1EthdAKn19">🗺️ मार्ग पहा</a>
+  </div>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="orn"><span></span> 🌸 <span></span></div>
+  <div class="big">औगड परिवार</div>
+  <p>आपली उपस्थिती आम्हांस आनंद देईल. 🙏</p>
+  <p style="margin-top:30px">॥ श्री गौरीमातेचा आशीर्वाद सर्वांवर राहो ॥</p>
+</footer>
+</div>
+</body>
+</html>
